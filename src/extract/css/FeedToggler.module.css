@@ -1,0 +1,25 @@
+.list {
+   max-width: 1140px;
+   width: 100%;
+   display: flex;
+   column-gap: 20px;
+}
+.item {
+   border-bottom: 2px solid transparent;
+}
+.link {
+   font-style: italic;
+   text-decoration: none;
+   color: #707685;
+   font-weight: bold;
+   font-size: 18px;
+}
+.link.active {
+   color: #0057be;
+   border-bottom: 2px solid #0057be;
+}
+@media screen and (max-width: 761px) {
+   .list {
+     padding: 0 20px;
+   }
+ }

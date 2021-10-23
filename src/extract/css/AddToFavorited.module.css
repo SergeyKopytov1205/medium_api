@@ -1,0 +1,26 @@
+.like {
+   margin-left: auto;
+   cursor: pointer;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   padding: 5px 10px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   border: none;
+}
+.icon {
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+.like.favor {
+   color: #0057BE;
+   background-color: #edf5fc;
+}
+.like.favor > .icon {
+   fill: #0057BE;
+}

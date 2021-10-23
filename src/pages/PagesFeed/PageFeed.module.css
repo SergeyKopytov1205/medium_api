@@ -1,0 +1,43 @@
+.content {
+   display: grid;
+   grid-template-columns: 9fr 3fr;
+   grid-template-areas:
+      "toggler toggler"
+      "feed tags"
+      "pagin tags";
+   row-gap: 20px;
+   column-gap: 40px;
+}
+.toggler {
+   grid-area: toggler;
+}
+.feed {
+   grid-area: feed;
+   background: #ffffff;
+   box-shadow: 0px 14px 44px rgba(12, 18, 35, 0.05);
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   padding: 20px;
+}
+.pagination {
+   grid-area: pagin;
+}
+.tags {
+   grid-area: tags;
+}
+@media screen and (max-width: 761px) {
+   .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+         "toggler"
+         "feed"
+         "pagin"
+         "tags";
+      row-gap: 20px;
+      column-gap: 40px;
+   }
+}

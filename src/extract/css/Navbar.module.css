@@ -1,0 +1,123 @@
+.header {
+   background: #ffffff;
+   padding: 5px 15px;
+   border-radius: 8px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   -ms-border-radius: 8px;
+   -o-border-radius: 8px;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.logo {
+   flex-grow: 1;
+   text-decoration: none;
+}
+
+.logoContent {
+   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+   font-size: 2em;
+   color: #0c1223;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.logoTitle {
+   width: 4em;
+   font-weight: 600;
+}
+.logoNumber {
+   font-size: 2em;
+   font-weight: 600;
+}
+.menu {
+   display: none;
+}
+.list {
+   display: flex;
+}
+.item {
+   display: inline-flex;
+   margin: 0 10px;
+}
+
+.item:last-child {
+   margin-right: 0;
+}
+
+.link {
+   text-decoration: none;
+   color: #0057be;
+   background: rgba(0, 87, 190, 0.2);
+   padding: 10px 20px;
+   border-radius: 10px;
+}
+
+.item:hover {
+   transform: scale(1.05);
+   -webkit-transform: scale(1.05);
+   -moz-transform: scale(1.05);
+   -ms-transform: scale(1.05);
+   -o-transform: scale(1.05);
+}
+
+.link.active {
+   background: #0057be;
+   color: #fff;
+}
+@media screen and (max-width: 761px) {
+   .menu {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url(./../image/Menu_icon_2_icon-icons.com_71856.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+   }
+   .menu.active {
+      background-image: url(./../image/4115230-cancel-close-cross-delete_114048.png);
+   }
+   .list {
+      display: none;
+   }
+   .list.active {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      padding: 10px;
+      width: 200px;
+      background: #fff;
+      border: 1px solid #333;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      z-index: 11111;
+   }
+}
+@media screen and (max-width: 761px) {
+   .logoContent {
+      font-size: 1em;
+   }
+   .logoTitle {
+      width: 1em;
+   }
+   .logoNumber {
+      font-size: 2em;
+   }
+}
+@media screen and (max-width: 400px) {
+   .list.active {
+      width: 100%;
+   }
+   
+}
