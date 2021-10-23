@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { CurrentUserProvider } from "./context/currentUser.js";
 
 import style from './App.module.css'
@@ -14,11 +14,11 @@ function App() {
     <div className={style.container}>
       <CurrentUserProvider>
         <CurrentUserChecker>
-          <BrowserRouter >
+          <HashRouter >
             <NavBar />
             <Routes />
             <Footer />
-          </BrowserRouter>
+          </HashRouter>
         </CurrentUserChecker>
       </CurrentUserProvider>
     </div >

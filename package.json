@@ -2,6 +2,7 @@
   "name": "medium_api",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sergeykopytov1205.github.io/medium_api/",
   "dependencies": {
     "axios": "^0.21.4",
     "classnames": "^2.3.1",
