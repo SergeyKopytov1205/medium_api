@@ -1,6 +1,6 @@
 import { stringify } from "query-string";
 import React, { useEffect } from "react";
-import { Fragment } from "react/cjs/react.development";
+import { Fragment } from "react";
 import Feed from "../../../components/Feed";
 import FeedToggler from "../../../components/FeedToggler";
 import Loading from "../../../components/Loading";

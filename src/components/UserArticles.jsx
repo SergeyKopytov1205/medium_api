@@ -1,6 +1,6 @@
 import { stringify } from "query-string";
 import React, { Fragment } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 
 import { getPaginator, limit } from "../utils/utils";

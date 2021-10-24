@@ -1,6 +1,6 @@
 import React, { Fragment, useContext, useState } from "react";
 import { Link, Redirect } from "react-router-dom";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import useFetch from "../../hooks/useFetch";
 import { CurrentUserContext } from './../../context/currentUser'
 
